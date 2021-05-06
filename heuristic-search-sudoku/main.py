@@ -2,7 +2,7 @@ from time import sleep
 import os
 from heuristic import Sudoku
 
-fronteira = [Sudoku(file="sudoku1.txt", readFile=True, isHeuristic=True)]
+fronteira = [Sudoku(file="sudoku-games/sudoku1.txt", readFile=True, isHeuristic=True)]
 count = 0
 while (len(fronteira) > 0):
     count += 1
