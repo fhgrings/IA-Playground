@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./minimax.js"></script>
+    <script src="./script.js"></script>
+    <script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="block" onclick="clicked(this)"></div>
+        <div class="block" onclick="clicked(this)"></div>
+        <div class="block" onclick="clicked(this)"></div>
+
+        <div class="block" onclick="clicked(this)"></div>
+        <div class="block" onclick="clicked(this)"></div>
+        <div class="block" onclick="clicked(this)"></div>
+
+        <div class="block" onclick="clicked(this)"></div>
+        <div class="block" onclick="clicked(this)"></div>
+        <div class="block" onclick="clicked(this)"></div>
+    </div>
+</body>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .main {
+        background-color: black;
+        width: 600px;
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-shadow:inset 0px 0px 0px 10px white;
+
+    }
+    .block {
+        background-color: white;
+        height: 198px;
+        width: 198px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .axes, .o {
+        font-size: 90px;
+    }
+
+</style>
+</html>
