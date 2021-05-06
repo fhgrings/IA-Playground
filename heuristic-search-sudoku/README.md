@@ -14,10 +14,12 @@ python main.py
 
 ## Algorithm
 
-Algorithm
+![Algorithm](https://github.com/fhgrings/IA-Playground/blob/master/heuristic-search-sudoku/images/flux.png)
 
-Decisions Tree
+![Decisions Tree - Sudoku 4x4](https://github.com/fhgrings/IA-Playground/blob/master/heuristic-search-sudoku/images/Arvore_sudoku-4x4.png)
 
 ## Results
 
-GIF
+![Execution](https://github.com/fhgrings/IA-Playground/blob/master/heuristic-search-sudoku/images/sudoku-result-gif.gif)
+
+![Comparison](https://github.com/fhgrings/IA-Playground/blob/master/heuristic-search-sudoku/images/table.png)
