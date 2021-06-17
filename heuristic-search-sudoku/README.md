@@ -5,6 +5,8 @@
 
 https://www.youtube.com/watch?v=B5aJgfDSzrs
 
+![Paper: Um estudo de comparação entre algoritmos de busca cega e heurística para resolução de Sudokus](Sudoku_Algorithm-Felipe-Grings.pdf)
+
 ## How to run
 
 ```python
