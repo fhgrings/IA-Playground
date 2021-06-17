@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ia8032="http://grings.life/ia8032#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6">
+        <owl:imports rdf:resource="http://grings.life/ia8032"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#hasTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#hasTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#has_course -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#has_course">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#isCourseOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#isCourseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#isCourseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#performs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#performs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#EducationalEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#EducationalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#FullTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#FullTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#PartTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#PartTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Professor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Task"/>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#professor_worker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#professor_worker">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Ana_Farias -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Ana_Farias">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <org:memberOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Andre_Martins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Andre_Martins">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <org:memberOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Biology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Biology">
+        <rdf:type rdf:resource="http://grings.life/ia8032#RegularCourse"/>
+        <isCourseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Computing_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Computing_Engineering">
+        <rdf:type rdf:resource="http://grings.life/ia8032#RegularCourse"/>
+        <isCourseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Felipe_Grings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Felipe_Grings">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <org:hasMembership rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Professor"/>
+        <org:memberOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+        <foaf:made rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Full_Time_Teaches_Web_Sem"/>
+        <foaf:made rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Organize_Comp_Eng"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#FullTimeProfessor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#FullTimeProfessor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#FullTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Full_Time_Teaches_Web_Sem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Full_Time_Teaches_Web_Sem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Task"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Jonas_Burgos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Jonas_Burgos">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <org:memberOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Maestro_DJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Maestro_DJ">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <org:memberOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Nutrition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Nutrition">
+        <rdf:type rdf:resource="http://grings.life/ia8032#RegularCourse"/>
+        <isCourseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Organize_Comp_Eng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Organize_Comp_Eng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Task"/>
+        <ia8032:organize rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Computing_Engineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Professor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Professor">
+        <rdf:type rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <org:role rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#FullTimeProfessor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Quimichal_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Quimichal_Engineering">
+        <rdf:type rdf:resource="http://grings.life/ia8032#RegularCourse"/>
+        <isCourseOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Semantic_Web -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Semantic_Web">
+        <rdf:type rdf:resource="http://grings.life/ia8032#Subject"/>
+        <ia8032:isPartOf rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Computing_Engineering"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#Unisinos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/felipe/ontologies/2021/5/untitled-ontology-6#EducationalEntity"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
